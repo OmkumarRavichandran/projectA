@@ -6,6 +6,11 @@
   http://www.springframework.org/schema/context/ 
   http://www.springframework.org/schema/context/spring-context.xsd">
   <bean id="emp" class="com.chainsys.projectA.beans.Employee" ></bean>
-  <bean id="c1" class="com.chainsys.projectA.beans.Customer" ></bean>
+  <bean id="c1" class="com.chainsys.projectA.beans.Customer" lazy-init="true"></bean>
+  <bean id="emp1" class="com.chainsys.projectA.beans.Actor" scope="prototype"></bean>
+<bean id="film" class="com.chainsys.projectA.beans.Movie">
+        <constructor-arg type="java.lang.String" value="RRR"/>
+        <constructor-arg type="java.lang.String" value="Rajamouli"/>
+    </bean>
 </beans>
   

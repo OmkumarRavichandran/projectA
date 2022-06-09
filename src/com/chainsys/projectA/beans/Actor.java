@@ -1,6 +1,6 @@
 package com.chainsys.projectA.beans;
 
-public class Customer {
+public class Actor {
 
 	private int id;
 	private String name;
@@ -25,8 +25,7 @@ public class Customer {
 		System.out.println(this.getId());
 		System.out.println(this.getName());
 	}
-	
-	public Customer() {
-		System.out.println("Customer object created "+ hashCode());
+	public Actor () {
+		System.out.println("Actor object created "+ hashCode());
 	}
 }
